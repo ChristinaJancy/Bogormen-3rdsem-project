@@ -7,6 +7,16 @@
 	<?php bloginfo('name'); // show the blog name, from settings ?> | 
 	<?php is_front_page() ? bloginfo('description') : wp_title(''); // if we're on the home page, show the description, from the site's settings - otherwise, show the title of the post or page ?>
 </title>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LB8CTFQ4CY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LB8CTFQ4CY');
+</script>
+	
 <?php wp_head(); 
 // This fxn allows plugins, and Wordpress itself, to insert themselves/scripts/css/files
 // (right here) into the head of your website. 

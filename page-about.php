@@ -19,7 +19,7 @@ get_header(); // This fxn gets the header.php file and renders it ?>
         <p class="title">CEO & Founder</p>
         <p>Ejes og drives af Jesper Willumsen, som startede butikken i en alder af 20 år i 1991. Bogormen er dermed en af Esbjergs ældste specialbutikker</p>
         <p>info@bogormen.dk</p>
-      </div>
+      </div> 
     </div>
   </div>
 </div>

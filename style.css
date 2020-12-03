@@ -29,7 +29,7 @@ html {
     border: 0;
     outline: 0;
     box-sizing: border-box;
-    background-color:#182628;
+    background-color:#1C1D21;
     -webkit-text-size-adjust: 100%;
     /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
     -ms-text-size-adjust: 100%;
@@ -69,7 +69,7 @@ h4,
 .site-footer-mobile,
 .site-footer-pc {
     font-family: 'Dosis', sans-serif;
-    color: rgb(243, 243, 243);
+    color: #F2F2F2;
 }
 
 h1 {
@@ -90,7 +90,7 @@ h4 {
 
 p {
     font-family: 'Comfortaa', cursive;
-    color: rgb(243, 243, 243);
+    color: #F2F2F2;
 }
 
 .title {
@@ -146,9 +146,8 @@ a:active {
 /*------------------header---------------------------------*/
 
 header{
-    background: rgb(243, 243, 243);
+    background:#F2F2F2;
     width:100%;
-    
     padding: 10px 10px 0 10px;
 }
 
@@ -279,7 +278,7 @@ header .header-container nav {
 .site-footer-pc {
     background-repeat: no-repeat;
     background-size: cover;
-    color: whitesmoke;
+    color:#F2F2F2;
     height: 300px;
     display: flex;
     justify-content: center;
@@ -305,7 +304,7 @@ header .header-container nav {
 }
 
 #footer_box {
-    border-right: 1px solid #ededed;
+    border-right: 1px solid #F2F2F2;
     padding: 20px;
     flex: 1;
     box-sizing: border-box;
@@ -441,12 +440,12 @@ header .header-container nav {
  .video-section{
     padding: 20px;
     text-align: center;
-    background-color: rgb(243, 243, 243);
+    background-color: #F2F2F2;
  }
 
  .video-section h2{
     text-align: center;
-    color:#182628;
+    color:#1C1D21;
  }
 
 
@@ -483,10 +482,10 @@ header .header-container nav {
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(253, 253, 253, 0.089);
+    box-shadow: #f2f2f2;
     width: auto;
     height: 50%;
-    background-color: rgb(243, 243, 243);
+    background-color:#f2f2f2;
 }
 
 .card img {
@@ -496,22 +495,22 @@ header .header-container nav {
 
 .card h3 {
     text-align: center;
-    color:#182628;
+    color:#1C1D21;
 }
 
 .card p {
-    color:#182628;
+    color:#1C1D21;
 }
 
 .about-section {
     padding: 50px;
     text-align: center;
-    background-color: rgb(243, 243, 243);
+    background-color: #f2f2f2;
 }
 
 .about-section h2,
 .about-section p {
-    color: rgb(17, 17, 17);
+    color: #1C1D21;
 }
 
 .container-about {
@@ -537,11 +536,11 @@ header .header-container nav {
 .contact-banner{
     padding: 50px;
     text-align: center;
-    background-color: rgb(243, 243, 243);
+    background-color: #f2f2f2;
 }
 
 .contact-banner p, .contact-banner h2{
-    color:black;
+   color:#1C1D21;
 }
 
 /* Style inputs */
@@ -557,7 +556,7 @@ input[type=text], select, textarea {
   
   input[type=submit] {
     background-color: #408140;
-    color: white;
+    color: #f2f2f2;
     padding: 12px 20px;
     border: none;
     cursor: pointer;
@@ -570,10 +569,10 @@ input[type=text], select, textarea {
   
   /* Style the container/contact section */
   .container-contact {
-    background-color:#182628;
+    background-color:#1C1D21;
     padding: 10px;
     font-family: 'Dosis', sans-serif;
-    color: rgb(243, 243, 243);
+    color: #f2f2f2;
   }
   
   /* Create two columns that float next to eachother */
@@ -604,8 +603,8 @@ input[type=text], select, textarea {
   visibility: hidden; /* Hidden by default. Visible on click */
   min-width: 250px; /* Set a default minimum width */
   margin-left: -125px; /* Divide value of min-width by 2 */
-  background-color: #333; /* Black background color */
-  color: #fff; /* White text color */
+  background-color: #1C1D21; /* Black background color */
+  color: #f2f2f2; /* White text color */
   text-align: center; /* Centered text */
   border-radius: 2px; /* Rounded borders */
   padding: 16px; /* Padding */

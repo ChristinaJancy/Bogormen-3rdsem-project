@@ -1,12 +1,17 @@
 <?php 
 
 
+
 function setup_menus(){
     register_nav_menu ("header", __("Header"));
     register_nav_menu ("footer", __("Footer"));
 }
 
-'add_action'("init", "setup_menus");
+add_action("init", "setup_menus");
+/*-----------------------------------------------------------------------------------*/
+/*  Set the maximum allowed width for any content in the theme
+/*-----------------------------------------------------------------------------------*/
+if ( ! isset( $content_width ) ) $content_width = 900;
 
 /*-----------------------------------------------------------------------------------*/
 /* Add Rss feed support to Head section
@@ -45,10 +50,16 @@ function bogormen_scripts()  {
 
 	// get the theme directory style.css and link to it in the header
 	wp_enqueue_style('style.css', get_stylesheet_directory_uri() . '/style.css');
-	
-	wp_enqueue_script('scrollanimation.js', get_template_directory_uri() . '/js/scrollanimation.js');
+	wp_enqueue_script('functions.js', get_stylesheet_directory_uri() . '/js/functions.js');
+  
 }
 add_action( 'wp_enqueue_scripts', 'bogormen_scripts' ); // Register this fxn and allow Wordpress to call it automatcally in the header
 
 
 //------------------------------ACF
+
+
+
+
+
+?>

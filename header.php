@@ -30,7 +30,7 @@
 <header id="masthead" class="site-header">
     <div class="header-container">
 	<div id="logo">
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>"> <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/129538426_156294726181857_1548133163662862385_n.png?alt=media&token=bbeb00e3-56a4-4596-8a4b-21f9e0f0ad68" width="60" height="40"></a>
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>"> <img src="<?php the_field('logo'); ?>" width="60" height="40"></a>
 	</div>
 
 	<nav class="site-navigation main-navigation">

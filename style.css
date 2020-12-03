@@ -50,7 +50,7 @@ main {
 
 header,
 section,
-article,
+
 aside,
 hgroup {
     display: block;
@@ -409,6 +409,47 @@ header .header-container nav {
     line-height: 30px;
  }
 
+ .container-box {
+    flex: 1;
+    flex-grow: 1;
+    padding: 0 150px;
+    max-width: 1400px;
+    /* width: 50%; */
+  }
+  .container-iframe {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+  }
+
+  .resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+ .video-section{
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(243, 243, 243);
+ }
+
+ .video-section h2{
+    text-align: center;
+    color:#182628;
+ }
+
+
 @media screen and (max-width: 900px){
     #home-col1-p{
        padding-top:0;
@@ -416,9 +457,21 @@ header .header-container nav {
     #home-col1 {
         height: auto;
     }
-    
+    .container-box{
+        padding: 0 40px;
+    }
     
 }
+
+@media screen and (max-width: 600px){
+    /* .flex {
+        flex-direction: column;
+      } */
+      .container-box{
+        padding:0;
+    }
+}
+
 
 /*--------------------------ABOUT US PAGE--------------------------------*/
 

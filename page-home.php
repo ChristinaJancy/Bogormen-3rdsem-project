@@ -22,6 +22,18 @@ get_header(); // This fxn gets the header.php file and renders it
   </div>
 
 </div>
+<div class="video-section">
+  <h2>KOM INDENFOR</h2>
+</div>
+<br><br>
+<section class="video flex">
+    <div class="container-box">
+      <article class="container-iframe">
+        <iframe width="560" height="315" class="resp-iframe"
+         src="https://www.youtube.com/embed/Z1wKe9kSFeE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </article>
+    </div>
+</section>
 
 <?php 'get_footer'(); // This fxn gets the footer.php file and renders it 
 ?>

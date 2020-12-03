@@ -1,0 +1,562 @@
+/*
+Theme Name: Bogormen theme
+Theme URI: 
+Author: Christina
+Author URI: 
+Description: Theme created for bogormen
+Version: 
+License: 
+*/
+
+
+/*-----------------Font---------------*/
+
+/* h1, h2, h3 */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+
+/* p */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+
+
+/*------------------General styling-----------------*/
+
+body,
+html {
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    background-color:#182628;
+    -webkit-text-size-adjust: 100%;
+    /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+    -ms-text-size-adjust: 100%;
+    /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+main {
+    height: 100vh;
+}
+
+header,
+section,
+article,
+aside,
+hgroup {
+    display: block;
+}
+
+/*--------------------------Some global settings--------------------------*/
+
+
+
+
+/*-----------------HEADINGS/PARAGRAPHS/UL LI------------------*/
+h1,
+h2,
+h3,
+h4,
+.site-footer-mobile,
+.site-footer-pc {
+    font-family: 'Dosis', sans-serif;
+    color: rgb(243, 243, 243);
+}
+
+h1 {
+    font-size: 3.4rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Comfortaa', cursive;
+    color: rgb(243, 243, 243);
+}
+
+.title {
+    text-align: center;
+
+}
+
+ul, li {
+    padding: 0;
+    list-style: none;
+  }
+
+/*--------------------links---------------------- */
+a {
+    color:#182628;
+    -webkit-transition: color 0.25s ease-in-out;
+    -moz-transition: color 0.25s ease-in-out;
+    -o-transition: color 0.25s ease-in-out;
+    -ms-transition: color 0.25s ease-in-out;
+    transition: color 0.25s ease-in-out;
+    text-decoration: none !important;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: rgba(1, 52, 65, 0.5);
+}
+
+/*-------------------GRID/COL/ROW--------------------------*/
+.col {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 900px) {
+    .col {
+        width: 100%;
+    }
+    
+}
+
+
+
+/*------------------header---------------------------------*/
+
+header{
+    background: rgb(243, 243, 243);
+    width:100%;
+    
+    padding: 10px 10px 0 10px;
+}
+
+.header-container{
+    display: flex;
+    width: 90%;
+    margin-right:5%;
+    margin-left:5%;
+
+    /* position: fixed!important; */
+}
+
+#logo{
+    box-sizing:border-box;
+    flex-grow: 1;
+}
+
+#logo img{
+    width:100px;
+    height: auto;
+}
+
+header .header-container nav {
+    font-family: 'Dosis', sans-serif;
+    margin: 10px 0 0 0;
+    box-sizing:border-box;
+    flex-grow: 1;
+}
+
+.header-container nav ul {
+    list-style: none;
+    margin: 10px 0 0 0;
+    text-align: right;
+}
+
+.header-container nav ul li {
+    margin: 0 20px;
+    display: inline;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.header-container nav ul li a {
+    
+    text-decoration: none;
+}
+
+
+/*--------------------------Footer styling---------------------*/
+/* MOBILE NAV */
+
+.site-footer-mobile {
+    position: fixed;
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/
+    height: 60px;
+    background-color: rgba(245, 245, 245, 0.973);
+    display: none;
+    text-align: center;
+}
+
+.site-footer-mobile nav ul {
+    list-style: none;
+}
+
+.site-footer-mobile nav ul li {
+    margin: 0 8px;
+    /* display: inline; */
+    display: inline;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color:#182628;
+    text-transform: uppercase;
+}
+
+.site-footer-mobile nav ul li a {
+    color:#182628;
+    text-decoration: none;
+
+}
+
+@media only screen and (max-width: 700px) {
+    header {
+        display: none;
+    }
+
+    .site-footer-mobile {
+        display: initial;
+    }
+
+    #footer_top p,
+    #footer_top h4 {
+        display: none;
+    }
+
+    .site-footer-pc {
+        display: none;
+    }
+
+    #footer_container {
+        display: none;
+    }
+
+    #footer_bottom {
+        display: none;
+    }
+
+    #footer_top {
+        display: none;
+    }
+
+    #footer_box {
+        display: none;
+    }
+
+    #footer_box a {
+        display: none;
+    }
+
+    #footer_text p {
+        display: none;
+    }
+}
+
+/* DESKTOP NAV */
+.site-footer-pc {
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+#footer_container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#footer_top p,
+#footer_top h3 {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+}
+
+#footer_bottom {
+    margin: 20px 0 0 0;
+    display: flex;
+}
+
+#footer_box {
+    border-right: 1px solid #ededed;
+    padding: 20px;
+    flex: 1;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+#footer_box a {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    box-sizing: border-box;
+    padding: 8px 0 0 12px;
+    color: white;
+    font-size: 2em;
+}
+
+#footer_box a:hover {
+    color: #999999;
+}
+
+#footer_box:not(:first-child) {
+    border-right: none;
+
+}
+
+#footer_text {
+    display: flex;
+    font-size: 9px;
+    margin-top: 15px;
+}
+
+#footer_text p {
+    flex: 1;
+}
+
+#footer_text p:nth-child(2) {
+    text-align: center;
+}
+
+#footer_text p:nth-child(3) {
+    text-align: right;
+}
+
+
+
+
+
+/*------------------arcticle/post/FB feed-----------------------*/
+.cff-wrapper {
+    margin: 0;
+    display: flex;
+
+}
+
+.cff-wrapper p {
+    color: black;
+}
+
+#cff .cff-post-links a:first-child,
+.cff-share-container {
+    font-family: 'Comfortaa', cursive;
+}
+
+.cff-header {
+    text-align: center;
+    font-size: 3em;
+    margin: 0 0 20% 0;
+    color: black;
+}
+
+/*------------------Home page------------------------*/
+
+.bgimg {
+    background-image: url('https://www.esbjergcity.dk/wp-content/uploads/2018/05/Bogormen.jpg');
+    min-height: 100%;
+ 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#home-col1 {
+    text-align: left;
+    height: 450px;
+}
+
+#home-col2 {
+    text-align: center;
+    height: 450px;
+}
+
+#home-section1{
+    width:90%;
+    margin-left: 5%;
+    margin-right:5%;
+    padding:30px 0;
+}
+
+#home-col1-p{
+    padding-top:15%;
+    line-height: 30px;
+ }
+
+@media screen and (max-width: 900px){
+    #home-col1-p{
+       padding-top:0;
+    }
+    #home-col1 {
+        height: auto;
+    }
+    
+    
+}
+
+/*--------------------------ABOUT US PAGE--------------------------------*/
+
+.column-about {
+    width: 30%;
+    margin: 0 35%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(253, 253, 253, 0.089);
+    width: auto;
+    height: 50%;
+    background-color: rgb(243, 243, 243);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    text-align: center;
+    color:#182628;
+}
+
+.card p {
+    color:#182628;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(243, 243, 243);
+}
+
+.about-section h2,
+.about-section p {
+    color: rgb(17, 17, 17);
+}
+
+.container-about {
+    padding: 0 16px;
+}
+
+.container-about::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 650px) {
+    .column-about {
+        width: 100%;
+        display: block;
+        margin: 0;
+    }
+}
+
+/*------------------------------CONTACT PAGE------------------------------------------*/
+.contact-banner{
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(243, 243, 243);
+}
+
+.contact-banner p, .contact-banner h2{
+    color:black;
+}
+
+
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Comfortaa', cursive;
+  }
+  
+  input[type=send] {
+    background-color: #408140;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Dosis', sans-serif;
+  }
+  
+  input[type=send]:hover {
+    background-color: #3f8543;
+  }
+  
+  /* Style the container/contact section */
+  .container-contact {
+    background-color:#182628;
+    padding: 10px;
+    font-family: 'Dosis', sans-serif;
+    color: rgb(243, 243, 243);
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=send] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+
+  /*FACEBOOK*/
+
+  .fb-banner{
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(243, 243, 243);
+}
+
+.fb-banner p, .fb-banner h2{
+    color:black;
+}

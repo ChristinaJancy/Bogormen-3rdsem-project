@@ -13,9 +13,12 @@ License:
 
 /* h1, h2, h3 */
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
 
 /* p */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 
 
@@ -68,7 +71,7 @@ h3,
 h4,
 .site-footer-mobile,
 .site-footer-pc {
-    font-family: 'Dosis', sans-serif;
+ font-family: 'Prata', serif;
     color: #F2F2F2;
 }
 
@@ -89,8 +92,9 @@ h4 {
 }
 
 p {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Montserrat', sans-serif;
     color: #F2F2F2;
+	font-size: 1.2rem;
 }
 
 .title {
@@ -171,7 +175,6 @@ header{
 }
 
 header .header-container nav {
-    font-family: 'Dosis', sans-serif;
     margin: 10px 0 0 0;
     box-sizing:border-box;
     flex-grow: 1;
@@ -220,9 +223,9 @@ header .header-container nav {
     /* display: inline; */
     display: inline;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     color:#182628;
-    text-transform: uppercase;
+
 }
 
 .site-footer-mobile nav ul li a {
@@ -339,6 +342,7 @@ header .header-container nav {
 
 #footer_text p {
     flex: 1;
+	font-size: 9px;
 }
 
 #footer_text p:nth-child(2) {
@@ -378,22 +382,38 @@ header .header-container nav {
 
 /*------------------Home page------------------------*/
 
-.bgimg {
+.icons{
+    width: 80%;
+	max-width: 450px;
+    height:auto;
+    -webkit-filter: drop-shadow(1px 1px 1px rgb(255, 255, 255));
+    filter: drop-shadow(1px 1px 1px rgb(255, 255, 255));
+}
+/* .bgimg {
     background-image: url('https://www.esbjergcity.dk/wp-content/uploads/2018/05/Bogormen.jpg');
     min-height: 100%;
  
     background-repeat: no-repeat;
     background-position: center;
-}
+} */
+
 
 #home-col1 {
-    text-align: left;
+    text-align: center;
     height: 450px;
+    float: left;
+    width: 50%;
+    padding: 10px;
+    
 }
 
 #home-col2 {
     text-align: center;
-    height: 450px;
+    height: 500px;
+    float: left;
+    width: 50%;
+    padding: 10px;
+
 }
 
 #home-section1{
@@ -452,14 +472,32 @@ header .header-container nav {
 @media screen and (max-width: 900px){
     #home-col1-p{
        padding-top:0;
+       
     }
     #home-col1 {
         height: auto;
+        width:100%;
+
+
     }
+    #home-col2{
+        width:100%;
+        height:650px;
+    }
+	
+
     .container-box{
         padding: 0 40px;
     }
-    
+    #home-section1{
+        padding:0;
+    }
+}
+
+@media screen and (max-width: 700px){
+    #home-col2{
+        height:550px;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -469,38 +507,13 @@ header .header-container nav {
       .container-box{
         padding:0;
     }
+    #home-col2{
+        height:420px;
+    }
 }
 
 
 /*--------------------------ABOUT US PAGE--------------------------------*/
-
-.column-about {
-    width: 30%;
-    margin: 0 35%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-}
-
-.card {
-    box-shadow: #f2f2f2;
-    width: auto;
-    height: 50%;
-    background-color:#f2f2f2;
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-}
-
-.card h3 {
-    text-align: center;
-    color:#1C1D21;
-}
-
-.card p {
-    color:#1C1D21;
-}
 
 .about-section {
     padding: 50px;
@@ -513,25 +526,65 @@ header .header-container nav {
     color: #1C1D21;
 }
 
-.container-about {
-    padding: 0 16px;
-}
+.column-about{
+    float: left;
+    width: 50%;
+  }
 
-.container-about::after,
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
+  .column-about:first-child{
+    float: left;
+    text-align:center;
+    padding: 20px;
+  }
 
-@media screen and (max-width: 650px) {
+  .column-about:first-child img{
+   width: 60%;
+   height: auto;
+  }
+
+ .text-box{
+    padding: 0 100px;
+    max-width: 750px;
+ }
+
+ @media screen and (max-width: 1000px) {
+    .text-box{
+        padding: 0;
+     }
+  }
+
+  @media screen and (max-width: 750px) {
     .column-about {
-        width: 100%;
-        display: block;
-        margin: 0;
+      width: 100%;
     }
-}
+    .text-box{
+        text-align:center;
+        padding: 0 20px;
+     }
+  }
+  
+  .mobile-only{
+      text-align:center;
+  }
 
+  .mobile-only h4{
+      background-color: #f2f2f2;
+      padding: 5px 0;
+      color: #1C1D21;
+  }
+  @media screen and (min-width: 700px){
+      .mobile-only{
+        display: none;
+      }
+  }
+
+  
+  /* Clear floats after the columns */
+  .row-about:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 /*------------------------------CONTACT PAGE------------------------------------------*/
 .contact-banner{
     padding: 50px;
